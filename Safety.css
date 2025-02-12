@@ -105,3 +105,53 @@ body {
         text-align: center;
     }
 }
+
+.header, .footer {
+    background: linear-gradient(90deg, #5A7D9A, #7D9EC0); /* Градієнтний фон */
+    padding: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Тінь для об’ємного вигляду */
+}
+
+.footer {
+    font-size: 16px;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .header, .footer {
+        font-size: 22px; /* Зменшуємо розмір тексту для мобільних */
+        padding: 15px;
+    }
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+body {
+    padding-top: 70px; /* Щоб контент не заходив під хедер */
+}
+
+html, body {
+    height: 100%;
+}
+
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
