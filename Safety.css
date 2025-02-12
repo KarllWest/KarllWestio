@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #C4F1F9;
+    background-image: url(./img//comp4.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+.header, .footer {
+    background-color: #7D9EC0;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    width: 100%;
+}
+ 
+.content {
+    max-width: 80%;
+    margin: 20px auto;
+}
+ 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+ 
+.text-block {
+    flex: 1;
+    padding: 20px;
+    min-width: 300px;
+    text-align: justify;
+}
+ 
+.image-block {
+    flex: 1;
+    padding: 20px;
+    min-width: 300px;
+    text-align: center;
+    display: flex;
+    size-adjust: auto;
+}
+ 
+.image-block img {
+    max-width: 100%;
+    height: auto;
+}
+ 
+.text-block p {
+    margin: 0;
+}
+ 
+.container1, .container2, .container3, .container4, .container5 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+ 
+.image-block1, .image-block2, .image-block3, .image-block4, .image-block5 {    
+    flex: 1;
+    padding: 20px;
+    min-width: 300px;
+    text-align: center;
+    display: flex;
+    size-adjust: auto;
+}
+ 
+.image-block1 img, .image-block2 img, .image-block3 img, .image-block4 img, .image-block5 img {
+    max-width: 100%;
+    height: auto;
+}
+ 
+.text-block1, .text-block2, .text-block3, .text-block4, .text-block5 {
+    flex: 1;
+    padding: 20px;
+    min-width: 300px;
+    text-align: justify;
+}
+ 
+.text-block1 p, .text-block2 p, .text-block3 p, .text-block4 p, .text-block5 p {
+    margin: 0;
+}
+ 
+@media screen and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-block, .image-block {
+        width: 100%;
+        text-align: center;
+    }
+}
